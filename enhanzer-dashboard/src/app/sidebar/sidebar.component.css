@@ -1,47 +1,43 @@
 .nav-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-    border-radius: 0;
-    cursor: pointer;
-    transition: background-color 0.3s, border-left 0.3s;
-    background-color: rgb(7, 5, 22)
-  }
-  /* Default background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, border-left 0.3s;
+  background-color: rgb(7, 5, 22);
+}
+
 .nav-link {
-    background-color: rgb(7, 5, 22); /* Light background color with some opacity */
-  }
- 
-  
-  /* Active state styling */
-  .nav-link.active {
-    background-color: rgb(7, 5, 22, 0.8); /* Increased opacity for active item */
-    border-left: 4px solid #ffffff; /* Blue left border (or any color you prefer) */
-  }
-  
-  /* Optional: Hover effect */
-  .nav-link:hover {
-    background-color: rgb(7, 5, 22, 0.8); /* Slightly darker background on hover */
-  }
-  
-  .nav-link i {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .nav-link span {
-    font-size: 0.7rem;
-  }
-  .nav {
-    width: 80px; /* Adjust this value to set your desired width */
-    position: fixed;
-    height: 100vh; /* Full height */
-    overflow-y: auto;
-    background-color: #343a40;
-    transition: transform 0.3s ease-in-out; /* Scroll if content overflows */
-  }
-  .nav.ng-hide {
-    transform: translateX(-100%);
-  }
-  
+  background-color: rgb(7, 5, 22);
+}
+
+.nav-link.active {
+  background-color: rgb(7, 5, 22, 0.8);
+  border-left: 4px solid #ffffff;
+}
+
+.nav-link:hover {
+  background-color: rgb(7, 5, 22, 0.8);
+}
+
+.nav-link i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-link span {
+  font-size: 0.7rem;
+}
+.nav {
+  width: 80px;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #343a40;
+  transition: transform 0.3s ease-in-out;
+}
+.nav.ng-hide {
+  transform: translateX(-100%);
+}

@@ -1,70 +1,63 @@
 .table-responsive {
-    margin-top: 20px;
-    padding: 0;
-    overflow-x: auto;
-  }  
-  .table th, .table td {
-    vertical-align: middle;
-  } 
- 
-  .deal-button{
-    border: 1px solid #0026fd;
-    border-left: 4px solid #ffffff;
-  }
-  .btn-sm {
-    padding: 0.25rem 0.5rem;
-  }
-  .custom-row {
-    height: 30px; /* Adjust height as needed */
-  }
-  .bi {
-    font-size: 1rem;
-  }
- 
-  .container-fluid {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  
-  .row {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  
-  
-  .table {
-    width: 100%;
-  }
-  /* Make buttons' background transparent */
+  margin-top: 20px;
+  padding: 0;
+  overflow-x: auto;
+}
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.deal-button {
+  border: 1px solid #0026fd;
+  border-left: 4px solid #ffffff;
+}
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+}
+.custom-row {
+  height: 30px;
+}
+.bi {
+  font-size: 1rem;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.table {
+  width: 100%;
+}
+
 .btn-transparent {
   background-color: transparent;
   border: none;
   padding: 2;
 }
 
-
-/* Blue icon color */
 .blue-icon {
   color: rgb(53, 53, 255);
 }
 
-/* Yellow icon color */
 .yellow-icon {
   color: rgb(238, 198, 0);
 }
 
-/* Red icon color */
 .red-icon {
   color: red;
 }
 
-/* Adjust button padding if needed */
 .btn-transparent .btn-sm {
   padding: 5px;
 }
 .bold-icon {
-  font-size: 1rem; /* Adjust this value as needed */
+  font-size: 1rem;
 }
-
-  

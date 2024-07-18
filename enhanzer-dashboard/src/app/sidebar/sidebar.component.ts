@@ -8,16 +8,15 @@ import { SidebarService } from '../sidebar.service';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css'],
 })
-export class SidebarComponent implements OnInit{
+export class SidebarComponent implements OnInit {
   isVisible = true;
 
   constructor(private sidebarService: SidebarService) {}
   ngOnInit() {
-    this.sidebarService.sidebarVisible$.subscribe(isVisible => {
+    this.sidebarService.sidebarVisible$.subscribe((isVisible) => {
       this.isVisible = isVisible;
     });
   }
-  
- }
+}

@@ -1,22 +1,22 @@
 <div class="container-fluid p-0">
   <!-- First Row: Icon -->
-  <div class="row mb-2">
+  <div class="row mb-0" style="background-color:#e4e4e4;">
     <div class="col">
-      <i class="bi bi-plus-circle"></i>
+      <button class="btn deal-button  btn-primary" style="border-radius: 0;"><i class="bi my-icon bi-file-earmark-text-fill"></i></button>
     </div>
   </div>
   
   <!-- Second Row: New Deal Button -->
-  <div class="row mb-2">
+  <div class="row mb-1" style="background-color:#e4e4e4;">
     <div class="col text-end">
-      <button class="btn btn-success">New Deal</button>
+      <button class="btn  btn-primary" style="border-radius: 0;">New Deal</button>
     </div>
   </div>
   
   <!-- Third Row: Search Bar -->
   <div class="row mb-2">
     <div class="col">
-      <input type="text" class="form-control" placeholder="Search deals" (input)="onSearch($event)">
+      <input type="text" class="form-control" style="width: 400px;" placeholder="Search deals" (input)="onSearch($event)">
     </div>
   </div>
   
@@ -24,30 +24,38 @@
   <div class="table-responsive">
     <table class="table table-striped table-hover">
       <thead class="thead-dark">
-        <tr>
-          <th scope="col">Deal Size</th>
-          <th scope="col">Deal Category</th>
-          <th scope="col">Deal Employee</th>
-          <th scope="col">Deal Location</th>
-          <th scope="col">Pipeline</th>
-          <th scope="col">Stage</th>
-          <th scope="col">Last Updated</th>
-          <th scope="col">Actions</th>
+        <tr style="height: 10px;">
+          <th style="font-size: 0.8rem;" scope="col">Deal Size</th>
+          <th style="font-size: 0.8rem;" scope="col">Deal Category</th>
+          <th style="font-size: 0.8rem;" scope="col">Deal Employee</th>
+          <th style="font-size: 0.8rem;" scope="col">Deal Location</th>
+          <th style="font-size: 0.8rem;" scope="col">Pipeline</th>
+          <th style="font-size: 0.8rem;" scope="col">Stage</th>
+          <th style="font-size: 0.8rem;" scope="col">Last Updated</th>
+          <th style="font-size: 0.8rem;" scope="col"></th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let deal of filteredDeals">
-          <td>{{ deal.dealSize }}</td>
-          <td>{{ deal.category }}</td>
-          <td>{{ deal.employee }}</td>
-          <td>{{ deal.location }}</td>
-          <td>{{ deal.pipeline }}</td>
-          <td>{{ deal.stage }}</td>
-          <td>{{ deal.lastUpdated }}</td>
-          <td>
-            <button class="btn btn-primary btn-sm"><i class="bi bi-pencil"></i></button>
-            <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+        <tr class="custom-row" *ngFor="let deal of filteredDeals">
+          <td style="font-size: 0.7rem;">{{ deal.dealSize }}</td>
+          <td style="font-size: 0.7rem;">{{ deal.category }}</td>
+          <td style="font-size: 0.7rem;">{{ deal.employee }}</td>
+          <td style="font-size: 0.7rem;"> {{ deal.location }}</td>
+          <td style="font-size: 0.7rem;">{{ deal.pipeline }}</td>
+          <td style="font-size: 0.7rem;">{{ deal.stage }}</td>
+          <td style="font-size: 0.7rem;">{{ deal.lastUpdated }}</td>
+          <td style="width: 150px;">
+            <button class="btn btn-transparent btn-sm">
+              <i class="bi bi-file-earmark-text-fill blue-icon bold-icon"></i>
+            </button>
+            <button class="btn btn-transparent btn-sm">
+              <i class="bi bi-pencil-square yellow-icon bold-icon"></i>
+            </button>
+            <button class="btn btn-transparent btn-sm">
+              <i class="bi bi-x red-icon bold-icon"></i>
+            </button>
           </td>
+          
         </tr>
       </tbody>
     </table>

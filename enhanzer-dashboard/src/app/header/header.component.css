@@ -1,23 +1,25 @@
-.navbar {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
+
   .navbar-brand {
     display: flex;
+    margin-left: 1rem;
     align-items: center;
     
   }
-  
+  .icon-lg {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
   .navbar-text {
-    margin-right: auto;
-    padding-right: 1rem;
-    font-size: 1rem;
+    margin-right: 1rem;    
+    font-size: 1.2rem;
+  }
+  .enhanzer-text{
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  .vertical-line {
+    border-left: 1px solid white;
+    height: 30px; /* Adjust the height as needed */
   }
   
-  @media (max-width: 992px) {
-    .navbar-text {
-      display: none;
-    }
-  }
+ 
   

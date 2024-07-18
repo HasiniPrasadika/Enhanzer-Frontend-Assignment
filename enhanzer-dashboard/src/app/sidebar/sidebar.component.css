@@ -6,21 +6,23 @@
     border-radius: 0;
     cursor: pointer;
     transition: background-color 0.3s, border-left 0.3s;
+    background-color: rgb(7, 5, 22)
   }
   /* Default background color */
 .nav-link {
-    background-color: rgba(255, 255, 255, 0.1); /* Light background color with some opacity */
+    background-color: rgb(7, 5, 22); /* Light background color with some opacity */
   }
+ 
   
   /* Active state styling */
   .nav-link.active {
-    background-color: rgba(255, 255, 255, 0.3); /* Increased opacity for active item */
+    background-color: rgb(7, 5, 22, 0.8); /* Increased opacity for active item */
     border-left: 4px solid #ffffff; /* Blue left border (or any color you prefer) */
   }
   
   /* Optional: Hover effect */
   .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background on hover */
+    background-color: rgb(7, 5, 22, 0.8); /* Slightly darker background on hover */
   }
   
   .nav-link i {

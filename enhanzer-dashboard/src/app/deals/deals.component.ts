@@ -11,6 +11,12 @@ import { CommonModule } from '@angular/common';
 export class DealsComponent {
   deals = [
     { dealSize: 75000, category: 'Fitness Equipments', employee: 'dilshan', location: 'Purchasing', pipeline: 'eZuite Sales', stage: 'Product Demo', lastUpdated: '2020-12-08 04:33:11' },
+    { dealSize: 75000, category: 'Fitness Equipments', employee: 'kasun', location: 'Purchasing', pipeline: 'eZuite Sales', stage: 'Product Demo', lastUpdated: '2020-12-08 04:33:11' },
+    { dealSize: 75000, category: 'Fitness Equipments', employee: 'mahesh', location: 'Purchasing', pipeline: 'eZuite Sales', stage: 'Product Demo', lastUpdated: '2020-12-08 04:33:11' },
+    { dealSize: 75000, category: 'Fitness Equipments', employee: 'sanduni', location: 'Purchasing', pipeline: 'eZuite Sales', stage: 'Product Demo', lastUpdated: '2020-12-08 04:33:11' },
+    { dealSize: 75000, category: 'Fitness Equipments', employee: 'rashmi', location: 'Purchasing', pipeline: 'eZuite Sales', stage: 'Product Demo', lastUpdated: '2020-12-08 04:33:11' },
+    { dealSize: 75000, category: 'Fitness Equipments', employee: 'pubudu', location: 'Purchasing', pipeline: 'eZuite Sales', stage: 'Product Demo', lastUpdated: '2020-12-08 04:33:11' },
+    
     // Add more deals here
   ];
 

@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <app-header></app-header>
+  <div class="main-content d-flex" [class.sidebar-hidden]="!isSidebarVisible">
+    <app-sidebar></app-sidebar>
+    <div class="content flex-grow-1 p-0 m-0">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

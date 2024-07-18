@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  app-header {
+    flex-shrink: 0;
+  }
+  
+  .main-content {
+    display: flex;
+    transition: all 0.3s ease;
+  }
+  
+  .main-content.sidebar-hidden .content {
+    width: 100%;
+  }
+  
+  .sidebar-hidden app-sidebar {
+    display: none;
+  }
+  
+  .content {
+    flex-grow: 1;
+    transition: all 0.3s ease;
+  }
+  
+  app-sidebar {
+    width: 80px;
+    /* background-color: #343a40; */
+  }
+  
+  .content {
+    flex-grow: 1;
+    transition: all 0.3s ease;
+    margin: 0;
+    /* background-color: #f8f9fa; */
+    overflow-y: auto;
+  }
+  
